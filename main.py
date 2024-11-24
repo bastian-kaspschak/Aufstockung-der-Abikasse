@@ -94,16 +94,17 @@ with tgb.Page() as plotter:
                         y__3="Gewinn G(x) in €", layout="{vertical_line}", fixed_axis=True
                     )
                 with tgb.part():
+                    tgb.text("## Parameter", mode="md")
                     for label, var, max_val, step in [
-                        ("**Preis in €**", "p", maxp, 0.01),
-                        ("**Var. Stückkosten kᵥ,₁ in €**", "kv1", 1.0, 0.01),
-                        ("**Var. Stückkosten kᵥ,₂ in €**", "kv2", 1.0, 0.01),
-                        ("**Rabattschwelle xₛ in Stück**", "thr", maxx, max(1,int(maxx/100))),
-                        ("**Fixkosten K_f in €**", "fx", maxkf, max(1,int(maxkf/100)))
+                        ("Preis in €", "p", maxp, 0.01),
+                        ("Var. Stückkosten kᵥ,₁ in €", "kv1", 1.0, 0.01),
+                        ("Var. Stückkosten kᵥ,₂ in €", "kv2", 1.0, 0.01),
+                        ("Rabattschwelle xₛ in Stück", "thr", maxx, max(1,int(maxx/100))),
+                        ("Fixkosten K_f in €", "fx", maxkf, max(1,int(maxkf/100)))
                     ]:
-                        tgb.text(label, mode="md")
-                        tgb.number(f"{{{var}}}", min=0.0, max=max_val, step=step, on_change=update_plot)
-                        tgb.slider(f"{{{var}}}", min=0.0, max=max_val, step=step, on_change=update_plot)
+                        with tgb.expandable(title=label):
+                            tgb.number(f"{{{var}}}", min=0.0, max=max_val, step=step, on_change=update_plot)
+                            tgb.slider(f"{{{var}}}", min=0.0, max=max_val, step=step, on_change=update_plot)
         tgb.part()
 
 with tgb.Page() as about:
