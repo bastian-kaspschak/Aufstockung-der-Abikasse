@@ -78,7 +78,7 @@ with tgb.Page() as root:
         with tgb.part(width=f"{page_width}px"):
             tgb.toggle(label="Modus", theme=True)
             tgb.navbar()
-            tgb.text("# Aufstockung der Abi-Kasse", mode="md")
+            tgb.text("# Mehr Geld für die Abikasse", mode="md")
         tgb.part()
 
 with tgb.Page() as plotter:
@@ -114,13 +114,15 @@ with tgb.Page() as start:
             with tgb.layout(columns="1 1"):
                 tgb.image(image_path)
                 with tgb.part():
-                    tgb.text("## Worum geht es?", mode="md")
-                    tgb.text("Bei vielen Schülerinnen und Schülern besteht eine sehr hohe Nachfrage nach Durststillern. Daher beschließt die 24HH1 für die nächsten Monate in den Pausen Durststiller verschiedener Geschmackssorten für je **1,20€** pro Stück zu verkaufen und so die Abi-Kasse aufzustocken.", mode="md")
-                    tgb.text("Für die gesamte Aktion fallen Fixkosten von **900€** an. Der Großhändler, von dem die Durststiller bezogen werden, verlangt **0,70€** je Stück. Allerdings gewährt er der 24HH1 einen Mengenrabatt: Nach dem **750**. Durststiller (Rabattschwelle) verlangt er nämlich nur noch **0,35€** je Stück.", mode="md")
+                    tgb.text("Bei vielen Schülerinnen und Schülern besteht eine sehr hohe Nachfrage nach Durststillern. Daher beschließt die 24HH1 für die nächsten Monate in den Pausen Durststiller verschiedener Geschmackssorten für je **1,20€** pro Stück zu verkaufen und so die Abikasse aufzustocken.", mode="md")
+                    tgb.text("Für die gesamte Aktion fallen durch Transport, Lagerung, Miete und Werbung Fixkosten von **900€** an. Der Großhändler, von dem die Durststiller bezogen werden, verlangt **0,70€** je Stück. Allerdings gewährt er der 24HH1 einen Mengenrabatt: Nach dem **750**. Durststiller (Rabattschwelle) verlangt er nämlich nur noch **0,36€** je Stück.", mode="md")
+                    tgb.text("Insgesamt reicht das Budget aus, um die Fixkosten zu tragen und maximal 3.000 Durststiller beim Großhändler einzukaufen.", mode="md")
+                    tgb.text("**Wie viele Durststiller müssten mindestens verkauft werden, damit die 24HH1 keinen Verlust macht?**", mode="md")
+                    tgb.text("**Wie hoch ist der Gewinn, wenn alle 3.000 Durststiller verkauft werden?**", mode="md")
             with tgb.part():
                 tgb.text("## Arbeitsauftrag", mode="md")
                 tgb.text("Ihnen steht im obigen Reiter ein Funktionsplotter zur Verfügung. Über Schieberegler und Eingabefelder können Sie den Preis, die Fixkosten, die Rabattschwelle und die variablen Stückkosten vor und nach der Rabattschwelle dynamisch anpassen.", mode="md")
-                tgb.text("Übernehmen Sie die gegebenen Werte aus dem obigen Text und visualisieren Sie die Funktionsgraphen für die Erlös-, Kosten- und Gewinnfunktion. Bestimmen Sie außerdem graphisch die **Gewinnschwelle** und den **Gewinn bei 3000 verkauften Durststillern**.", mode="md")
+                tgb.text("Übernehmen Sie die gegebenen Werte aus dem obigen Text und visualisieren Sie die Funktionsgraphen für die Erlös-, Kosten- und Gewinnfunktion. Bestimmen Sie außerdem graphisch die **Gewinnschwelle** und den **Gewinn bei 3.000 verkauften Durststillern**. Machen Sie anschließend einen Screenshot der drei Funktionsgraphen.", mode="md")
         tgb.part()
 
 # Page routing
