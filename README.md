@@ -4,5 +4,5 @@ Dies ist ein kleiner, interaktiver Funktionsplotter, den ich für meinen ersten 
 
 [Hier geht's zum Funktionsplotter!](https://aufstockung-der-abi-kasse-a629af8cf23a.herokuapp.com/)
 
-![Screenshot Start](https://github.com/bastian-kaspschak/Aufstockung-der-Abi-Kasse/blob/main/images/screenshot-start.png)
-![Screenshot Funktionsplotter](https://github.com/bastian-kaspschak/Aufstockung-der-Abi-Kasse/blob/main/images/screenshot-funktionsplotter.png)
+![Screenshot Start](https://github.com/bastian-kaspschak/Aufstockung-der-Abikasse/blob/main/images/screenshot-start.png)
+![Screenshot Funktionsplotter](https://github.com/bastian-kaspschak/Aufstockung-der-Abikasse/blob/main/images/screenshot-funktionsplotter.png)
