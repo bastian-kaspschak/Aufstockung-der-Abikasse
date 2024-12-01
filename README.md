@@ -1,4 +1,4 @@
-# Aufstockung-der-Abi-Kasse
+# Mehr Geld für die Abikasse
 
 Dies ist ein kleiner, interaktiver Funktionsplotter, den ich für meinen ersten Unterrichtsbesuch im Fach Mathematik erstellt habe. Im Kontext von Staffelrabatten beim Einkauf von Durstlöschern können meine Schüler hier neben einer linearen Erlösfunktion auch die stückweise lineare Kosten- und Gewinnfunktion visualisieren. Dabei können der Preis, die Rabattschwelle, die Fixkosten und die variablen Stückkosten vor und jenseits der Rabattschwelle dynamisch angepasst werden.
 
